@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Hide Webflow badges and template badges */
+.w-webflow-badge {
+  display: none !important;
+}
+.template-badge {
+  display: none !important;
+}
+
+/* Hide prices from photos */
+.product-amount-box,
+.product-2-amount-box,
+.cart-item-amount,
+.cart-total-amount,
+.product-amount,
+.product-compare-amount {
+  display: none !important;
+}
+
+/* Hide reviews from photos */
+.product-badge-box,
+.product-2-badge {
+  display: none !important;
+}
+
+/* Hide coupon button */
+.hero-2-coupen-box {
+  display: none !important;
+}
+
+/* Hide newsletter subscribe section and top bar */
+.footer-top,
+.top-bar,
+.nav-2-extra {
+  display: none !important;
+}
+
