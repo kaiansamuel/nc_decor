@@ -93,6 +93,9 @@ https.get('https://woodiz-ttm.webflow.io/', (res) => {
     html = html.replace(/<div class="top-bar">[\s\S]*?<\/div><\/div><\/div><\/div><\/div>/g, '');
     html = html.replace(/<div class="nav-2-extra">[\s\S]*?<\/section>/g, '</div></div></div></div></div></section>');
     
+    // Replace Logo
+    html = html.replace(/<img src="https:\/\/cdn\.prod\.website-files\.com\/67dbe21f59e71d28de66b346\/68233a453f8b3c121c3ab0ad_logo%20wood%202\.svg" loading="lazy" alt="logo" class="logo"\/>/g, '<img src="/logoNEUDIVA_page-0003-removebg-preview.png" loading="lazy" alt="NC Decor Logo" class="logo" style="max-height: 180px; width: auto; max-width: none; object-fit: contain; margin-top: -20px; margin-bottom: -20px;"/>');
+    
     // Additional Portuguese Translations
     html = html.replace(/Remove/g, 'Remover');
     html = html.replace(/Pay with browser\./g, 'Pagar com o navegador.');

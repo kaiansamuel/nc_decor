@@ -36,3 +36,14 @@
   display: none !important;
 }
 
+/* Override logo constraints */
+.logo-box, .w-nav-brand {
+  max-width: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  max-width: none !important;
+}
+
