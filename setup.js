@@ -47,6 +47,12 @@ https.get('https://woodiz-ttm.webflow.io/', (res) => {
     html = html.replace(/Let's add some products./g, 'Vamos adicionar alguns produtos.');
     html = html.replace(/BEST COLLECTIONS/g, 'MELHORES COLEÇÕES');
     html = html.replace(/GREAT RANGE/g, 'GRANDE VARIEDADE');
+
+    // Limpeza e substituição do título do banner principal
+    html = html.replace(/<div class="hero-2-title-extra">[\s\S]*?<\/div><\/div><\/div>/g, '');
+    html = html.replace(/Designer<\/h1>/g, 'NC DECOR Ambientes Modernos<\/h1>');
+    html = html.replace(/<div class="hero-2-title-main"><h2[^>]*>Living<\/h2><\/div>/g, '');
+
     html = html.replace(/Designer/g, 'Design');
     html = html.replace(/Living/g, 'Ambientes');
     html = html.replace(/Up to <span class="hero-2-discount-span">45%<\/span> off/g, 'Até <span class="hero-2-discount-span">45%</span> de desconto');
